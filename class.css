@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif; */
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    padding: 110px 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header section */
+.head {
+    display: flex;
+    justify-content: center;
+    gap: 13.4rem;
+    /* margin-left: 3.5rem; */
+    margin-bottom: 50px;
+}
+
+.creative h1 {
+    color: black;
+    font-family:'PT Serif', serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.62px;
+}
+ 
+.who h2 {
+    color: black;
+    font-family:'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;vj df
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.who p {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 439px;
+    padding-top: 10px;
+}
+
+/* Main Section */
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap:40px;
+    justify-content: start;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 100px;
+}
+
+.img {
+    max-width: 238px;
+    /* max-width: 100%; */
+}
+
+.img img {
+    max-width: 100%;
+    height: 341px;
+    object-fit: contain;
+}
+
+.image .name {
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+}
+
+div.image_group1::after {
+    display: inline-block;
+    content: 'Product Owner';
+    position: relative;
+    top: calc(100% - 179%);
+    left: calc(100% - 16%);   
+    transform: rotate(90deg);
+    font-family:'PT Serif', serif;
+}
+
+div.image_group2::after {
+    display: inline-block;
+    content: 'Art Director';
+    position: relative;
+    top: calc(100% - 186%);
+    left: calc(100% - 13%);
+    transform: rotate(90deg);
+    font-family: 'PT Serif', serif;
+}
+
+div.image_group2, div.image_group5 {
+    margin-top: 20px;
+}
+
+
+div.image_group3::after {
+    display: inline-block;
+    content: 'Tech Lead';
+    position: relative;
+    top: calc(100% - 184%);
+    left: calc(100% - 10%);
+    transform: rotate(90deg);
+    font-family: 'PT Serif', serif;
+}
+
+div.image_group4::after {
+    display: inline-block;
+    content: 'UX designer';
+    position: relative;
+    top: calc(100% - 181%);
+    left: calc(100% - 12%);
+    transform: rotate(90deg);
+    font-family: 'PT Serif', serif;
+}
+
+div.image_group5::after {
+    display: inline-block;
+    content: 'Developer';
+    position: relative;
+    top: calc(100% - 187%);
+    left: calc(100% - 10%);
+    transform: rotate(90deg);
+    font-family: 'PT Serif', serif;
+}
+
+div.image_group6::after {
+    display: inline-block;
+    content: 'Developer';
+    position: relative;
+    top: calc(100% - 183%);
+    left: calc(100% - 10%);;
+    transform: rotate(90deg);
+    font-family: 'PT Serif', serif;
+}
+
+.footer {
+    text-align: center;
+}
+
+@media screen and (max-width: 848px) {
+    .main {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    div.image_group4, div.image_group6 {
+        margin-top: 20px;
+    }
+    
+    div.image_group5 {
+        margin-top: 0px;
+    }
+
+    div.image_group3::after {
+        top: calc(100% - 184%);
+    }
+
+    div.image_group4::after {
+        top: calc(100% - 186%);
+    }
+    
+    div.image_group5::after {
+        top: calc(100% - 184%);
+    }
+
+    div.image_group6::after {
+        top: calc(100% - 188%);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .main {
+        margin-top: -50px;
+    }
+    
+    .head {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .img {
+        width: 138px;
+    }
+
+    .name {
+        margin-top: -70px;
+    }
+
+    div.image_group1::after {
+        top: calc(100% - 154%);
+        left: calc(100% - 29%)
+    }
+
+    div.image_group2::after {
+        top: calc(100% - 161%);
+        left: calc(100% - 22%);
+    }
+
+    div.image_group3::after {
+        top: calc(100% - 159%);
+        left: calc(100% - 17%);
+    }
+
+    div.image_group4::after {
+          left: calc(100% - 22%);
+    }
+    
+    div.image_group5::after {
+        top: calc(100% - 159%);
+        left: calc(100% - 17%);
+    }
+
+    div.image_group6::after {
+        top: calc(100% - 162%);
+        left: calc(100% - 17%);
+    }
+}
